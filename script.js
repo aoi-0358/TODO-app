@@ -32,7 +32,14 @@ function add(todo) {
       event.preventDefault();
       li.remove();
       saveData();
-    })
+    });
+
+    li.addEventListener("click", function () {
+      li.classList.toggle
+      ("text-decoration-line-through");
+    });
+
+
     ul.appendChild(li);
     input.value = "";
     saveData();
